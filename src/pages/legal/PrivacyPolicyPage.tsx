@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Shield, Calendar, Mail, Phone, ArrowLeft } from 'lucide-react'
+import { Shield, ArrowLeft, Calendar, Mail, Phone } from 'lucide-react'
 
 export const PrivacyPolicyPage: React.FC = () => {
   return (
