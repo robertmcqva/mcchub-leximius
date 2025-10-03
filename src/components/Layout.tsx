@@ -22,15 +22,6 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
                      location.pathname.startsWith('/analytics') ||
                      location.pathname.startsWith('/admin')
 
-  // Debug logging for deployment investigation
-  console.log('🧭 Navigation Debug:', { 
-    pathname: location.pathname, 
-    isAuthPage, 
-    breadcrumbsLength: breadcrumbs.length, 
-    breadcrumbConfig,
-    shouldShowBreadcrumb: breadcrumbConfig.show && !isAuthPage && breadcrumbs.length > 0
-  })
-
   // Close mobile menu when clicking outside
   React.useEffect(() => {
     const handleClickOutside = () => {
