@@ -1,8 +1,7 @@
 import React from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { Menu, X, User, ChevronDown, Code2, Sparkles, Github, Twitter, Linkedin, Instagram } from 'lucide-react'
+import { User, ChevronDown, Code2, Sparkles, Github, Twitter, Linkedin, Instagram } from 'lucide-react'
 import { Breadcrumb } from './Breadcrumb'
-import { SmartLink } from './SmartLink'
 import { useBreadcrumbs, shouldShowBreadcrumbs } from '../hooks/useBreadcrumbs'
 
 interface LayoutProps {
@@ -12,7 +11,6 @@ interface LayoutProps {
 export const Layout: React.FC<LayoutProps> = ({ children }) => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false)
   const [isUserMenuOpen, setIsUserMenuOpen] = React.useState(false)
-  const [isComponentsDropdownOpen, setIsComponentsDropdownOpen] = React.useState(false)
   const location = useLocation()
   const breadcrumbs = useBreadcrumbs()
   

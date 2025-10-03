@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { ArrowRight, Star, Users, Zap, Shield, Code2, Sparkles, Rocket, Globe, ChevronRight } from 'lucide-react'
+import { ArrowRight, Star, Users, Zap, Shield, Code2, Sparkles, Rocket, ChevronRight } from 'lucide-react'
 
 export const HomePage: React.FC = () => {
   return (

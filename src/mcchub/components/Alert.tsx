@@ -22,6 +22,9 @@ export const Alert: React.FC<AlertProps> = ({
     warning: 'bg-yellow-50 border-yellow-200 text-yellow-900',
     error: 'bg-red-50 border-red-200 text-red-900',
     info: 'bg-cyan-50 border-cyan-200 text-cyan-900',
+    gradient: 'bg-gradient-to-r from-blue-50 to-purple-50 border-blue-200 text-blue-900',
+    ghost: 'bg-transparent border-gray-200 text-gray-700',
+    outline: 'bg-transparent border-blue-200 text-blue-700',
   }
 
   const iconClasses = {
@@ -31,6 +34,9 @@ export const Alert: React.FC<AlertProps> = ({
     warning: 'text-yellow-500',
     error: 'text-red-500',
     info: 'text-cyan-500',
+    gradient: 'text-blue-500',
+    ghost: 'text-gray-500',
+    outline: 'text-blue-500',
   }
 
   const icons = {
@@ -40,6 +46,9 @@ export const Alert: React.FC<AlertProps> = ({
     warning: AlertTriangle,
     error: AlertCircle,
     info: Info,
+    gradient: Info,
+    ghost: Info,
+    outline: Info,
   }
 
   const Icon = icons[variant]

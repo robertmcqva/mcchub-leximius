@@ -20,6 +20,9 @@ export const Badge: React.FC<BadgeProps> = ({
     warning: 'bg-yellow-100 text-yellow-800',
     error: 'bg-red-100 text-red-800',
     info: 'bg-cyan-100 text-cyan-800',
+    gradient: 'bg-gradient-to-r from-blue-500 to-purple-600 text-white',
+    ghost: 'bg-transparent border border-gray-300 text-gray-700',
+    outline: 'bg-transparent border border-blue-500 text-blue-700',
   }
   
   const sizeClasses = {
@@ -46,6 +49,9 @@ export const Badge: React.FC<BadgeProps> = ({
       warning: 'bg-yellow-500',
       error: 'bg-red-500',
       info: 'bg-cyan-500',
+      gradient: 'bg-gradient-to-r from-blue-500 to-purple-600',
+      ghost: 'bg-gray-400',
+      outline: 'bg-blue-500',
     }
 
     return (
