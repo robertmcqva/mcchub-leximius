@@ -261,17 +261,21 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
       )}
 
       <main className="flex-1">
-        {/* Always-on breadcrumb navigation */}
+        {/* Subtle breadcrumb navigation - flows naturally after navbar */}
         {breadcrumbConfig.show && !isAuthPage && breadcrumbs.length > 0 && (
-          <Breadcrumb 
-            items={breadcrumbs}
-            variant={breadcrumbConfig.variant}
-            showHome={breadcrumbConfig.showHome}
-            animated={breadcrumbConfig.animated}
-            compact={breadcrumbConfig.style === 'minimal'}
-          />
+          <div className="bg-gradient-to-b from-white to-gray-50/50 border-b border-gray-100/50">
+            <Breadcrumb 
+              items={breadcrumbs}
+              variant={breadcrumbConfig.variant}
+              showHome={breadcrumbConfig.showHome}
+              animated={breadcrumbConfig.animated}
+              compact={breadcrumbConfig.style === 'minimal'}
+            />
+          </div>
         )}
-        {children}
+        <div className={breadcrumbConfig.show && !isAuthPage && breadcrumbs.length > 0 ? 'bg-gray-50' : ''}>
+          {children}
+        </div>
       </main>
 
       {!isAuthPage && !isDashboard && (

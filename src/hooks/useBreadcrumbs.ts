@@ -174,20 +174,22 @@ export const useBreadcrumbs = (): BreadcrumbItem[] => {
 
 // Always show breadcrumbs - determine display style based on context
 export const getBreadcrumbConfig = (pathname: string) => {
+  const pathDepth = pathname.split('/').filter(Boolean).length
+  
   return {
-    // Always show breadcrumbs except in very specific cases
-    show: true,
+    // Show breadcrumbs on all pages except home
+    show: pathname !== '/',
     
-    // Compact style for simple pages, full style for complex navigation
-    style: pathname === '/' ? 'minimal' : 'full',
+    // Ultra-minimal style for top-level pages to avoid navbar conflicts
+    style: pathDepth <= 1 ? 'minimal' : 'full',
     
     // Show home icon for all pages except home itself
     showHome: pathname !== '/',
     
-    // Animation and emphasis based on page depth
-    animated: pathname.split('/').filter(Boolean).length > 1,
+    // Less animation on simple pages to keep focus on navbar
+    animated: pathDepth > 1,
     
-    // Special styling for certain page types
+    // Special styling for certain page types - more subtle approach
     variant: (() => {
       if (pathname.startsWith('/auth/')) return 'auth' as const
       if (pathname.startsWith('/admin/')) return 'admin' as const
