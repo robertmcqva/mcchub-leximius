@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Mail, Lock, User, Eye, EyeOff } from 'lucide-react'
+import { Mail, Lock, User, Eye, EyeOff, ArrowLeft, Home } from 'lucide-react'
 
 export const RegisterPage: React.FC = () => {
   const [showPassword, setShowPassword] = React.useState(false)
@@ -9,12 +9,32 @@ export const RegisterPage: React.FC = () => {
   return (
     <div className="min-h-screen bg-gray-50 flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-md w-full space-y-8">
+        {/* Navigation Back */}
+        <div className="flex items-center justify-between">
+          <Link 
+            to="/" 
+            className="inline-flex items-center text-gray-600 hover:text-gray-900 transition-colors group"
+          >
+            <ArrowLeft className="w-4 h-4 mr-2 group-hover:-translate-x-1 transition-transform" />
+            Back to Home
+          </Link>
+          <Link 
+            to="/" 
+            className="inline-flex items-center text-gray-500 hover:text-gray-700 transition-colors"
+          >
+            <Home className="w-4 h-4" />
+          </Link>
+        </div>
+        
         <div className="text-center">
-          <h2 className="text-3xl font-bold text-gray-900">Create your account</h2>
+          <h2 className="text-3xl font-bold text-gray-900">Join MccHub Leximius</h2>
           <p className="mt-2 text-gray-600">
-            Or{' '}
-            <Link to="/auth/login" className="text-blue-600 hover:text-blue-500 font-medium">
-              sign in to your existing account
+            Create your account to get started with our component library
+          </p>
+          <p className="mt-4 text-sm text-gray-500">
+            Already have an account?{' '}
+            <Link to="/auth/login" className="text-brand-600 hover:text-brand-500 font-medium">
+              Sign in here
             </Link>
           </p>
         </div>

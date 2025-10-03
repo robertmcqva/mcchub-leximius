@@ -6,8 +6,8 @@ export interface BaseComponentProps {
 }
 
 export type Size = 'xs' | 'sm' | 'md' | 'lg' | 'xl'
-export type Variant = 'primary' | 'secondary' | 'success' | 'warning' | 'error' | 'info'
-export type Color = 'gray' | 'blue' | 'green' | 'yellow' | 'red' | 'purple' | 'pink' | 'indigo'
+export type Variant = 'primary' | 'secondary' | 'success' | 'warning' | 'error' | 'info' | 'gradient' | 'ghost' | 'outline'
+export type Color = 'gray' | 'brand' | 'success' | 'warning' | 'error' | 'purple' | 'pink' | 'indigo'
 
 export interface ButtonProps extends BaseComponentProps {
   variant?: Variant
@@ -35,7 +35,7 @@ export interface InputProps extends BaseComponentProps {
 }
 
 export interface CardProps extends BaseComponentProps {
-  variant?: 'default' | 'outlined' | 'elevated'
+  variant?: 'default' | 'outlined' | 'elevated' | 'glass' | 'gradient'
   padding?: Size
   hover?: boolean
 }

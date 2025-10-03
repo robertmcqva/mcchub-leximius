@@ -1,11 +1,14 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { Layout } from './components/Layout.tsx'
+import { ScrollToTop } from './components/ScrollToTop.tsx'
+import { ComingSoonWrapper } from './components/ComingSoonWrapper.tsx'
 import { HomePage } from './pages/HomePage.tsx'
 import { AboutPage } from './pages/AboutPage.tsx'
 import { ServicesPage } from './pages/ServicesPage.tsx'
 import { PricingPage } from './pages/PricingPage.tsx'
 import { ContactPage } from './pages/ContactPage.tsx'
 import { BlogPage } from './pages/BlogPage.tsx'
+import { DocsPage } from './pages/DocsPage.tsx'
 import { LoginPage } from './pages/auth/LoginPage.tsx'
 import { RegisterPage } from './pages/auth/RegisterPage.tsx'
 import { Dashboard } from './pages/dashboard/Dashboard.tsx'
@@ -22,10 +25,14 @@ import { ComponentsPage } from './pages/library/ComponentsPage.tsx'
 import { ComponentDetailPage } from './pages/library/ComponentDetailPage.tsx'
 import { GettingStartedPage } from './pages/library/GettingStartedPage.tsx'
 import { PlaygroundPage } from './pages/library/PlaygroundPage.tsx'
+// Legal Pages
+import { PrivacyPolicyPage } from './pages/legal/PrivacyPolicyPage.tsx'
+import { TermsOfServicePage } from './pages/legal/TermsOfServicePage.tsx'
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Layout>
         <Routes>
           {/* Public Routes */}
@@ -36,6 +43,14 @@ function App() {
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/blog/:slug" element={<BlogPage />} />
+          <Route path="/docs" element={<DocsPage />} />
+          
+          {/* Coming Soon Route */}
+          <Route path="/coming-soon" element={<ComingSoonWrapper />} />
+          
+          {/* Legal Routes */}
+          <Route path="/legal/privacy" element={<PrivacyPolicyPage />} />
+          <Route path="/legal/terms" element={<TermsOfServicePage />} />
           
           {/* MccHub Leximius Library Routes */}
           <Route path="/library" element={<LibraryOverviewPage />} />

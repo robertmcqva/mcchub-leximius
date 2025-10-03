@@ -11,23 +11,25 @@ export const Card: React.FC<CardProps> = ({
   hover = false,
   ...props
 }) => {
-  const baseClasses = 'rounded-lg'
+  const baseClasses = 'rounded-2xl transition-all duration-200'
   
   const variantClasses = {
-    default: 'bg-white border border-gray-200',
+    default: 'bg-white border border-gray-200 shadow-elegant',
     outlined: 'bg-white border-2 border-gray-300',
-    elevated: 'bg-white shadow-lg border border-gray-100',
+    elevated: 'bg-white shadow-elegant-lg border border-gray-100',
+    glass: 'bg-white/80 backdrop-blur-xl border border-white/20 shadow-elegant',
+    gradient: 'bg-gradient-to-br from-brand-50 to-purple-50 border border-brand-200'
   }
   
   const paddingClasses = {
-    xs: 'p-2',
-    sm: 'p-4',
-    md: 'p-6',
-    lg: 'p-8',
-    xl: 'p-10',
+    xs: 'p-4',
+    sm: 'p-6',
+    md: 'p-8',
+    lg: 'p-10',
+    xl: 'p-12'
   }
   
-  const hoverClass = hover ? 'hover:shadow-md transition-shadow' : ''
+  const hoverClass = hover ? 'hover:shadow-elegant-lg hover:-translate-y-1 hover:scale-[1.02] cursor-pointer' : ''
 
   return (
     <div
