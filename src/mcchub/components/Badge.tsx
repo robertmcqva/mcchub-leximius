@@ -1,4 +1,4 @@
-// Badge component for the Leximius component library
+// Badge component for the MccHub Leximius component library
 import React from 'react'
 import { cn } from '../utils/cn'
 import type { BadgeProps } from '../types'

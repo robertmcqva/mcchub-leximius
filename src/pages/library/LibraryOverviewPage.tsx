@@ -1,4 +1,4 @@
-// MccHub Framework Component Library Overview Page
+// MccHub Leximius Component Library Overview Page
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { Code, Palette, Zap, Shield, Users, BookOpen } from 'lucide-react'
@@ -56,7 +56,7 @@ export const LibraryOverviewPage: React.FC = () => {
         <h1 className="text-5xl font-bold text-gray-900 mb-6">
           Welcome to{' '}
           <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-            MccHub Framework
+            MccHub Leximius
           </span>
         </h1>
         <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
@@ -99,7 +99,7 @@ export const LibraryOverviewPage: React.FC = () => {
       {/* Features */}
       <div className="mb-16">
         <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">
-          Why Choose MccHub Framework?
+          Why Choose MccHub Leximius?
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature, index) => (
@@ -118,11 +118,11 @@ export const LibraryOverviewPage: React.FC = () => {
       <div className="bg-gray-900 rounded-2xl p-8 md:p-12 text-center">
         <h2 className="text-3xl font-bold text-white mb-4">Ready to Start Building?</h2>
         <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-          Get up and running with MccHub Framework in minutes. Install the package and start using our components right away.
+          Get up and running with MccHub Leximius in minutes. Install the package and start using our components right away.
         </p>
         <div className="bg-gray-800 rounded-lg p-4 mb-8 text-left">
           <code className="text-green-400 font-mono">
-            npm install @mcchub/framework
+            npm install @mcchub/leximius
           </code>
         </div>
         <Link

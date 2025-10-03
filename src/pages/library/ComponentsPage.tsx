@@ -1,4 +1,4 @@
-// Components showcase page for the Leximius library
+// Components showcase page for the MccHub Leximius library
 import React, { useState } from 'react'
 import { Search, Grid, List } from 'lucide-react'
 import { Button } from '../../mcchub/components/Button.tsx'

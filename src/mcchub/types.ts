@@ -1,4 +1,4 @@
-// MccHub Framework Component Library Types
+// MccHub Leximius Component Library Types
 
 export interface BaseComponentProps {
   className?: string

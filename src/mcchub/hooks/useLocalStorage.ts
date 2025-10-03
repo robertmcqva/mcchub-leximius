@@ -1,4 +1,4 @@
-// useLocalStorage hook for the Leximius component library
+// useLocalStorage hook for the MccHub Leximius component library
 import { useState } from 'react'
 
 export function useLocalStorage<T>(

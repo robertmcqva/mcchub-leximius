@@ -1,4 +1,4 @@
-// Alert component for the Leximius component library
+// Alert component for the MccHub Leximius component library
 import React from 'react'
 import { cn } from '../utils/cn'
 import { X, CheckCircle, AlertCircle, AlertTriangle, Info } from 'lucide-react'

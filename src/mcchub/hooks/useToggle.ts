@@ -1,4 +1,4 @@
-// useToggle hook for the Leximius component library
+// useToggle hook for the MccHub Leximius component library
 import { useState, useCallback } from 'react'
 
 export function useToggle(initialValue = false): [boolean, () => void, (value: boolean) => void] {

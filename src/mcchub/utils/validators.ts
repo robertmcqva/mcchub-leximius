@@ -1,4 +1,4 @@
-// Validation utilities for the Leximius component library
+// Validation utilities for the MccHub Leximius component library
 
 export const validators = {
   // Email validation

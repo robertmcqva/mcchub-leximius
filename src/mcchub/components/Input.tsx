@@ -1,4 +1,4 @@
-// Input component for the Leximius component library
+// Input component for the MccHub Leximius component library
 import React from 'react'
 import { cn, inputSizes } from '../utils/cn'
 import type { InputProps } from '../types'

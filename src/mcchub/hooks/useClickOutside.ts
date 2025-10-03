@@ -1,4 +1,4 @@
-// useClickOutside hook for the Leximius component library
+// useClickOutside hook for the MccHub Leximius component library
 import { useEffect, useRef } from 'react'
 
 export function useClickOutside<T extends HTMLElement>(

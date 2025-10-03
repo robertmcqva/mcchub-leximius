@@ -1,4 +1,4 @@
-// Avatar component for the Leximius component library
+// Avatar component for the MccHub Leximius component library
 import React from 'react'
 import { cn } from '../utils/cn'
 import type { AvatarProps } from '../types'

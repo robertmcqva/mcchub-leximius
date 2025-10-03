@@ -1,6 +1,6 @@
 // Class name utility function (cn)
 // A utility to merge and conditionally apply class names
-// Similar to the popular 'clsx' library but customized for Leximius
+// Similar to the popular 'clsx' library but customized for MccHub Leximius
 
 export type ClassValue = string | number | boolean | undefined | null | ClassValue[]
 

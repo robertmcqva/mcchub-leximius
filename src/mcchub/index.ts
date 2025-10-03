@@ -1,4 +1,4 @@
-// MccHub Framework Component Library
+// MccHub Leximius Component Library
 // Main export file for all components, hooks, and utilities
 
 // Components (only export components that exist)

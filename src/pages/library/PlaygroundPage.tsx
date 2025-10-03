@@ -1,4 +1,4 @@
-// Interactive playground for testing MccHub Framework components
+// Interactive playground for testing MccHub Leximius components
 import React, { useState } from 'react'
 import { Button } from '../../mcchub/components/Button.tsx'
 import { Input } from '../../mcchub/components/Input.tsx'
@@ -28,7 +28,7 @@ export const PlaygroundPage: React.FC = () => {
       <div className="mb-8">
         <h1 className="text-3xl font-bold text-gray-900 mb-2">Component Playground</h1>
         <p className="text-gray-600">
-          Test and experiment with Leximius components in real-time. 
+          Test and experiment with MccHub Leximius components in real-time. 
           Adjust properties and see the changes instantly.
         </p>
       </div>

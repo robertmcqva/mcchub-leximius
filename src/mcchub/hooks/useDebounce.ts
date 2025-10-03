@@ -1,4 +1,4 @@
-// useDebounce hook for the Leximius component library
+// useDebounce hook for the MccHub Leximius component library
 import { useState, useEffect } from 'react'
 
 export function useDebounce<T>(value: T, delay: number): T {

@@ -1,4 +1,4 @@
-// Formatting utilities for the Leximius component library
+// Formatting utilities for the MccHub Leximius component library
 
 export const formatters = {
   // Number formatting

@@ -1,4 +1,4 @@
-// Card component for the Leximius component library
+// Card component for the MccHub Leximius component library
 import React from 'react'
 import { cn } from '../utils/cn'
 import type { CardProps } from '../types'

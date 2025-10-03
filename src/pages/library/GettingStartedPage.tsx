@@ -1,4 +1,4 @@
-// Getting Started page for the Leximius component library
+// Getting Started page for the MccHub Leximius component library
 import React from 'react'
 import { Code, Package, Zap, BookOpen } from 'lucide-react'
 import { Card } from '../../mcchub/components/Card.tsx'
@@ -10,14 +10,14 @@ export const GettingStartedPage: React.FC = () => {
     {
       icon: <Package className="text-blue-600" size={24} />,
       title: 'Installation',
-      description: 'Install Leximius in your React project',
-      code: 'npm install @your-org/leximius',
+      description: 'Install MccHub Leximius in your React project',
+      code: 'npm install @mcchub/leximius',
     },
     {
       icon: <Code className="text-green-600" size={24} />,
       title: 'Import Components',
       description: 'Import the components you need',
-      code: `import { Button, Input, Card } from '@your-org/leximius'`,
+      code: `import { Button, Input, Card } from '@mcchub/leximius'`,
     },
     {
       icon: <Zap className="text-purple-600" size={24} />,
@@ -32,14 +32,14 @@ export const GettingStartedPage: React.FC = () => {
       <div className="mb-8">
         <h1 className="text-3xl font-bold text-gray-900 mb-2">Getting Started</h1>
         <p className="text-gray-600 text-lg">
-          Learn how to install and use Leximius components in your React application.
+          Learn how to install and use MccHub Leximius components in your React application.
         </p>
       </div>
 
       {/* Prerequisites */}
       <Alert variant="info" title="Prerequisites" className="mb-8">
         <p>
-          Leximius requires React 18.0+ and is built with TypeScript. 
+          MccHub Leximius requires React 18.0+ and is built with TypeScript. 
           Make sure you have Node.js 16.0+ installed.
         </p>
       </Alert>
@@ -80,7 +80,7 @@ export const GettingStartedPage: React.FC = () => {
           <div className="bg-gray-900 rounded-lg p-6 mb-4">
             <pre className="text-green-400 font-mono text-sm overflow-x-auto">
               <code>{`import React, { useState } from 'react'
-import { Button, Input, Card, Alert } from '@your-org/leximius'
+import { Button, Input, Card, Alert } from '@mcchub/leximius'
 
 export const ContactForm = () => {
   const [email, setEmail] = useState('')
@@ -143,12 +143,12 @@ export const ContactForm = () => {
         <h2 className="text-2xl font-bold text-gray-900 mb-6">TypeScript Support</h2>
         <Card>
           <p className="text-gray-600 mb-4">
-            Leximius is built with TypeScript and provides full type safety out of the box. 
+            MccHub Leximius is built with TypeScript and provides full type safety out of the box. 
             All components come with proper TypeScript definitions.
           </p>
           <div className="bg-gray-900 rounded-lg p-6">
             <pre className="text-green-400 font-mono text-sm overflow-x-auto">
-              <code>{`import { ButtonProps } from '@your-org/leximius'
+              <code>{`import { ButtonProps } from '@mcchub/leximius'
 
 interface CustomButtonProps extends ButtonProps {
   customProp?: string
@@ -167,7 +167,7 @@ const CustomButton: React.FC<CustomButtonProps> = (props) => {
         <h2 className="text-2xl font-bold text-gray-900 mb-6">Customization & Theming</h2>
         <Card>
           <p className="text-gray-600 mb-4">
-            Leximius components are built with Tailwind CSS and can be easily customized. 
+            MccHub Leximius components are built with Tailwind CSS and can be easily customized. 
             You can override styles using the <code className="bg-gray-100 px-1 rounded">className</code> prop 
             or by customizing your Tailwind configuration.
           </p>
