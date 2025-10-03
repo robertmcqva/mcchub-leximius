@@ -1,4 +1,4 @@
-// Modern Always-On Breadcrumb Component
+// Modern Always-On Fixed Breadcrumb Component
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { 
@@ -7,6 +7,7 @@ import {
   Tag, User, Shield, LogIn, UserPlus, BarChart3, FolderOpen, TrendingUp,
   Scale, Users, Cog, Clock, AlertTriangle
 } from 'lucide-react'
+import { useScrollDirection } from '../hooks/useScrollDirection'
 
 // Icon mapping for breadcrumb items
 const iconMap: Record<string, React.ComponentType<any>> = {
@@ -40,13 +41,19 @@ export const Breadcrumb: React.FC<BreadcrumbProps> = ({
   animated = true,
   compact = false
 }) => {
+  const { scrollDirection, scrollY } = useScrollDirection()
+  
+  // Hide breadcrumb when scrolling down (after 100px) to maximize content space
+  // Show when scrolling up or at top of page
+  const shouldHide = scrollDirection === 'down' && scrollY > 100
+  
   // Subtle variant-specific styling that complements the navbar
   const variantStyles = {
-    default: 'bg-gray-50/95',
-    auth: 'bg-blue-50/95',
-    admin: 'bg-red-50/95',
-    dashboard: 'bg-purple-50/95',
-    library: 'bg-green-50/95'
+    default: 'bg-gray-50/98 border-gray-200/30',
+    auth: 'bg-blue-50/98 border-blue-200/30',
+    admin: 'bg-red-50/98 border-red-200/30',
+    dashboard: 'bg-purple-50/98 border-purple-200/30',
+    library: 'bg-green-50/98 border-green-200/30'
   }
 
   const variantTextColors = {
@@ -60,11 +67,16 @@ export const Breadcrumb: React.FC<BreadcrumbProps> = ({
   if (items.length === 0) return null
 
   return (
-    <div className={`${className}`}>
+    <div className={`
+      fixed top-16 left-0 right-0 z-30 transition-transform duration-300 ease-in-out
+      ${shouldHide ? '-translate-y-full' : 'translate-y-0'}
+      ${className}
+    `}>
       <div className={`
         ${variantStyles[variant]} 
-        border-b border-gray-100/50
+        border-b backdrop-blur-md
         transition-all duration-300 ease-in-out
+        shadow-sm hover:shadow-md
       `}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <nav 
