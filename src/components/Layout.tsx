@@ -261,21 +261,18 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
       )}
 
       <main className="flex-1">
-        {/* Fixed breadcrumb navigation - rendered outside main flow */}
+        {/* Simple breadcrumb navigation */}
         {breadcrumbConfig.show && !isAuthPage && breadcrumbs.length > 0 && (
           <Breadcrumb 
             items={breadcrumbs}
-            variant={breadcrumbConfig.variant}
             showHome={breadcrumbConfig.showHome}
-            animated={breadcrumbConfig.animated}
-            compact={breadcrumbConfig.style === 'minimal'}
           />
         )}
         
         {/* Content with appropriate top spacing when breadcrumb is present */}
         <div className={
           breadcrumbConfig.show && !isAuthPage && breadcrumbs.length > 0 
-            ? `pt-12 ${breadcrumbConfig.style === 'minimal' ? 'pt-10' : 'pt-12'} bg-gray-50` 
+            ? 'pt-10 bg-gray-50' 
             : ''
         }>
           {children}
