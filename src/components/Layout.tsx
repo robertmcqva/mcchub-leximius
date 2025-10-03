@@ -2,7 +2,7 @@ import React from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { User, ChevronDown, Code2, Sparkles, Github, Twitter, Linkedin, Instagram } from 'lucide-react'
 import { Breadcrumb } from './Breadcrumb'
-import { useBreadcrumbs, shouldShowBreadcrumbs } from '../hooks/useBreadcrumbs'
+import { useBreadcrumbs, getBreadcrumbConfig } from '../hooks/useBreadcrumbs'
 
 interface LayoutProps {
   children: React.ReactNode
@@ -13,6 +13,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
   const [isUserMenuOpen, setIsUserMenuOpen] = React.useState(false)
   const location = useLocation()
   const breadcrumbs = useBreadcrumbs()
+  const breadcrumbConfig = getBreadcrumbConfig(location.pathname)
   
   const isAuthPage = location.pathname.startsWith('/auth')
   const isDashboard = location.pathname.startsWith('/dashboard') || 
@@ -20,8 +21,6 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
                      location.pathname.startsWith('/projects') ||
                      location.pathname.startsWith('/analytics') ||
                      location.pathname.startsWith('/admin')
-  
-  const showBreadcrumbs = shouldShowBreadcrumbs(location.pathname)
 
   // Close mobile menu when clicking outside
   React.useEffect(() => {
@@ -262,12 +261,15 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
       )}
 
       <main className="flex-1">
-        {showBreadcrumbs && !isAuthPage && (
-          <div className="sticky top-16 z-40 bg-gray-50/90 backdrop-blur-sm border-b border-gray-100">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2">
-              <Breadcrumb items={breadcrumbs} />
-            </div>
-          </div>
+        {/* Always-on breadcrumb navigation */}
+        {breadcrumbConfig.show && !isAuthPage && breadcrumbs.length > 0 && (
+          <Breadcrumb 
+            items={breadcrumbs}
+            variant={breadcrumbConfig.variant}
+            showHome={breadcrumbConfig.showHome}
+            animated={breadcrumbConfig.animated}
+            compact={breadcrumbConfig.style === 'minimal'}
+          />
         )}
         {children}
       </main>
