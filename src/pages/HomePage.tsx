@@ -11,7 +11,7 @@ export const HomePage: React.FC = () => {
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
               Build with
-              <span className="block">Leximius Components</span>
+              <span className="block">MccHub Framework Components</span>
             </h1>
             <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
               The complete React component library for modern web development. Create beautiful, 
@@ -124,13 +124,13 @@ export const HomePage: React.FC = () => {
             Ready to get started?
           </h2>
           <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-            Join thousands of developers building beautiful interfaces with Leximius components.
+            Join thousands of developers building beautiful interfaces with MccHub Framework components.
           </p>
           <Link 
             to="/library" 
             className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors inline-flex items-center"
           >
-            Start Building with Leximius
+            Start Building with MccHub Framework
             <ArrowRight className="ml-2" size={20} />
           </Link>
         </div>

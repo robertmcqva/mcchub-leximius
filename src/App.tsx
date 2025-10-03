@@ -16,7 +16,7 @@ import { AdminPanel } from './pages/admin/AdminPanel.tsx'
 import { NotFoundPage } from './pages/NotFoundPage.tsx'
 import { ProtectedRoute } from './components/ProtectedRoute.tsx'
 import { AdminRoute } from './components/AdminRoute.tsx'
-// Leximius Library Pages
+// MccHub Framework Library Pages
 import { LibraryOverviewPage } from './pages/library/LibraryOverviewPage.tsx'
 import { ComponentsPage } from './pages/library/ComponentsPage.tsx'
 import { ComponentDetailPage } from './pages/library/ComponentDetailPage.tsx'
@@ -37,7 +37,7 @@ function App() {
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/blog/:slug" element={<BlogPage />} />
           
-          {/* Leximius Library Routes */}
+          {/* MccHub Framework Library Routes */}
           <Route path="/library" element={<LibraryOverviewPage />} />
           <Route path="/library/getting-started" element={<GettingStartedPage />} />
           <Route path="/library/components" element={<ComponentsPage />} />

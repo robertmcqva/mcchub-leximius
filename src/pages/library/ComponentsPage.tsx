@@ -1,9 +1,9 @@
 // Components showcase page for the Leximius library
 import React, { useState } from 'react'
 import { Search, Grid, List } from 'lucide-react'
-import { Button } from '../../leximius/components/Button'
-import { Input } from '../../leximius/components/Input'
-import { Card } from '../../leximius/components/Card'
+import { Button } from '../../mcchub/components/Button.tsx'
+import { Input } from '../../mcchub/components/Input.tsx'
+import { Card } from '../../mcchub/components/Card.tsx'
 
 export const ComponentsPage: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState('')

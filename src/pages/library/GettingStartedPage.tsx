@@ -1,9 +1,9 @@
 // Getting Started page for the Leximius component library
 import React from 'react'
 import { Code, Package, Zap, BookOpen } from 'lucide-react'
-import { Card } from '../../leximius/components/Card'
-import { Button } from '../../leximius/components/Button'
-import { Alert } from '../../leximius/components/Alert'
+import { Card } from '../../mcchub/components/Card.tsx'
+import { Button } from '../../mcchub/components/Button.tsx'
+import { Alert } from '../../mcchub/components/Alert.tsx'
 
 export const GettingStartedPage: React.FC = () => {
   const steps = [

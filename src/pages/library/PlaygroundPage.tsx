@@ -1,11 +1,11 @@
-// Interactive playground for testing Leximius components
+// Interactive playground for testing MccHub Framework components
 import React, { useState } from 'react'
-import { Button } from '../../leximius/components/Button'
-import { Input } from '../../leximius/components/Input'
-import { Card } from '../../leximius/components/Card'
-import { Badge } from '../../leximius/components/Badge'
-import { Avatar } from '../../leximius/components/Avatar'
-import { Alert } from '../../leximius/components/Alert'
+import { Button } from '../../mcchub/components/Button.tsx'
+import { Input } from '../../mcchub/components/Input.tsx'
+import { Card } from '../../mcchub/components/Card.tsx'
+import { Badge } from '../../mcchub/components/Badge.tsx'
+import { Avatar } from '../../mcchub/components/Avatar.tsx'
+import { Alert } from '../../mcchub/components/Alert.tsx'
 import { Code, Play } from 'lucide-react'
 
 export const PlaygroundPage: React.FC = () => {

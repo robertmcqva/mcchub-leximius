@@ -1,7 +1,7 @@
 // Component detail page template
 import React, { useState } from 'react'
-import { Button } from '../../leximius/components/Button'
-import { Card } from '../../leximius/components/Card'
+import { Button } from '../../mcchub/components/Button.tsx'
+import { Card } from '../../mcchub/components/Card.tsx'
 import { Copy, Eye, Code } from 'lucide-react'
 
 interface ComponentDetailPageProps {

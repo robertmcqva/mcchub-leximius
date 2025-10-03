@@ -1,4 +1,4 @@
-// Button component for the Leximius component library
+// Button component for the MccHub Framework component library
 import React from 'react'
 import { cn, variants, sizes } from '../utils/cn'
 import type { ButtonProps } from '../types'
