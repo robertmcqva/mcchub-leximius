@@ -20,6 +20,8 @@ export const Breadcrumb: React.FC<BreadcrumbProps> = ({
   className = '',
   showHome = true
 }) => {
+  // Debug logging for deployment investigation
+  console.log('🍞 Breadcrumb rendered:', { items, showHome, itemsLength: items.length })
 
   if (items.length === 0) return null
 
