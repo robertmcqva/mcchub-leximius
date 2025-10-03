@@ -1,39 +1,22 @@
 // Leximius Component Library
 // Main export file for all components, hooks, and utilities
 
-// Components
-export * from './components/Button'
-export * from './components/Input'
-export * from './components/Card'
-export * from './components/Modal'
-export * from './components/Badge'
-export * from './components/Avatar'
-export * from './components/Dropdown'
-export * from './components/Tooltip'
-export * from './components/Spinner'
-export * from './components/Alert'
-export * from './components/Tabs'
-export * from './components/Accordion'
-export * from './components/DataTable'
-export * from './components/Pagination'
-export * from './components/Breadcrumb'
-export * from './components/Progress'
-export * from './components/Toggle'
-export * from './components/Select'
-export * from './components/Textarea'
-export * from './components/Checkbox'
-export * from './components/Radio'
+// Components (only export components that exist)
+export { Button } from './components/Button'
+export { Input } from './components/Input'
+export { Card } from './components/Card'
+export { Badge } from './components/Badge'
+export { Avatar } from './components/Avatar'
+export { Alert } from './components/Alert'
 
-// Hooks
-export * from './hooks/useLocalStorage'
-export * from './hooks/useToggle'
-export * from './hooks/useDebounce'
-export * from './hooks/useClickOutside'
-export * from './hooks/useKeyPress'
-export * from './hooks/useMediaQuery'
+// Hooks (only export hooks that exist)
+export { useLocalStorage } from './hooks/useLocalStorage'
+export { useToggle } from './hooks/useToggle'
+export { useDebounce } from './hooks/useDebounce'
+export { useClickOutside } from './hooks/useClickOutside'
 
 // Utils
-export * from './utils/cn'
+export { cn } from './utils/cn'
 export * from './utils/formatters'
 export * from './utils/validators'
 
