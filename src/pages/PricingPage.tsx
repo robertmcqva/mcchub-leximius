@@ -226,9 +226,9 @@ export const PricingPage: React.FC = () => {
       </div>
 
       {/* CTA Section */}
-      <div className="relative py-24 bg-gray-900 overflow-hidden">
-        <div className="absolute inset-0 bg-mesh opacity-20"></div>
-        <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-96 h-96 bg-gradient-radial from-brand-500/30 to-transparent rounded-full blur-3xl"></div>
+      <div className="relative py-24 bg-gradient-to-br from-brand-600 via-purple-700 to-brand-800 overflow-hidden">
+        <div className="absolute inset-0 bg-mesh opacity-10"></div>
+        <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-96 h-96 bg-gradient-radial from-white/10 to-transparent rounded-full blur-3xl"></div>
         
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">

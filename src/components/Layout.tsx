@@ -280,10 +280,10 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
       </main>
 
       {!isAuthPage && !isDashboard && (
-        <footer className="bg-gray-900 text-white relative overflow-hidden">
+        <footer className="bg-gray-900 text-white relative overflow-hidden border-t border-gray-800">
           {/* Background decoration */}
-          <div className="absolute inset-0 bg-mesh opacity-10"></div>
-          <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-96 h-96 bg-gradient-radial from-brand-500/20 to-transparent rounded-full blur-3xl"></div>
+          <div className="absolute inset-0 bg-mesh opacity-5"></div>
+          <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-96 h-96 bg-gradient-radial from-brand-500/10 to-transparent rounded-full blur-3xl"></div>
           
           <div className="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
             {/* Only show newsletter section on pages without their own CTA */}
