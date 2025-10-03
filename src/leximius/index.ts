@@ -2,26 +2,26 @@
 // Main export file for all components, hooks, and utilities
 
 // Components (only export components that exist)
-export { Button } from './components/Button'
-export { Input } from './components/Input'
-export { Card } from './components/Card'
-export { Badge } from './components/Badge'
-export { Avatar } from './components/Avatar'
-export { Alert } from './components/Alert'
+export { Button } from './components/Button.tsx'
+export { Input } from './components/Input.tsx'
+export { Card } from './components/Card.tsx'
+export { Badge } from './components/Badge.tsx'
+export { Avatar } from './components/Avatar.tsx'
+export { Alert } from './components/Alert.tsx'
 
 // Hooks (only export hooks that exist)
-export { useLocalStorage } from './hooks/useLocalStorage'
-export { useToggle } from './hooks/useToggle'
-export { useDebounce } from './hooks/useDebounce'
-export { useClickOutside } from './hooks/useClickOutside'
+export { useLocalStorage } from './hooks/useLocalStorage.ts'
+export { useToggle } from './hooks/useToggle.ts'
+export { useDebounce } from './hooks/useDebounce.ts'
+export { useClickOutside } from './hooks/useClickOutside.ts'
 
 // Utils
-export { cn } from './utils/cn'
-export * from './utils/formatters'
-export * from './utils/validators'
+export { cn } from './utils/cn.ts'
+export * from './utils/formatters.ts'
+export * from './utils/validators.ts'
 
 // Types
-export * from './types'
+export * from './types.ts'
 
 // Version
 export const version = '1.0.0'
