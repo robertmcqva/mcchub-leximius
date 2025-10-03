@@ -25,7 +25,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
             <div className="flex justify-between h-16">
               <div className="flex items-center">
                 <Link to="/" className="flex-shrink-0 flex items-center">
-                  <h1 className="text-xl font-bold text-gray-900">ProApp</h1>
+                  <h1 className="text-xl font-bold text-gray-900">MccHub Leximius</h1>
                 </Link>
                 
                 {!isDashboard && (
@@ -110,7 +110,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
           <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
               <div>
-                <h3 className="text-lg font-semibold mb-4">ProApp</h3>
+                <h3 className="text-lg font-semibold mb-4">MccHub Leximius</h3>
                 <p className="text-gray-400">Building the future of professional web applications.</p>
               </div>
               <div>
@@ -139,7 +139,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
               </div>
             </div>
             <div className="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400">
-              <p>&copy; 2025 ProApp. All rights reserved.</p>
+              <p>&copy; 2025 MccHub Leximius. All rights reserved.</p>
             </div>
           </div>
         </footer>

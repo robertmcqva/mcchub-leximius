@@ -20,7 +20,7 @@ export const ContactPage: React.FC = () => {
               <Mail className="text-blue-600 mt-1 mr-4" size={24} />
               <div>
                 <h3 className="font-semibold text-gray-900">Email</h3>
-                <p className="text-gray-600">hello@proapp.com</p>
+                <p className="text-gray-600">hello@mcchub.com</p>
               </div>
             </div>
             
