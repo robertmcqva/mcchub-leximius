@@ -6,7 +6,10 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "build:lib": "vite build --mode library",
+    "docs:build": "vite build --mode docs",
+    "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.0",
@@ -23,6 +26,11 @@
     "lucide-react": "^0.544.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
-    "react-router-dom": "^7.9.3"
+    "react-router-dom": "^7.9.3",
+    "prismjs": "^1.29.0",
+    "@types/prismjs": "^1.26.0",
+    "react-live": "^4.1.7",
+    "react-hot-toast": "^2.4.1",
+    "clsx": "^2.0.0"
   }
 }

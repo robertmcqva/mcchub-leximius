@@ -10,26 +10,26 @@ export const HomePage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
-              Build Professional
-              <span className="block">Web Applications</span>
+              Build with
+              <span className="block">Leximius Components</span>
             </h1>
             <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
-              The complete platform for modern web development. Create, deploy, and scale 
-              your applications with enterprise-grade tools and infrastructure.
+              The complete React component library for modern web development. Create beautiful, 
+              accessible, and performant user interfaces with our comprehensive collection of TypeScript components.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link 
-                to="/auth/register" 
+                to="/library" 
                 className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-flex items-center"
               >
-                Get Started Free
+                Explore Components
                 <ArrowRight className="ml-2" size={20} />
               </Link>
               <Link 
-                to="/demo" 
+                to="/library/components" 
                 className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors"
               >
-                View Demo
+                Browse Library
               </Link>
             </div>
           </div>
@@ -53,10 +53,10 @@ export const HomePage: React.FC = () => {
               <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
                 <Zap className="text-blue-600" size={24} />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Lightning Fast</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">Component Library</h3>
               <p className="text-gray-600">
-                Built with performance in mind. Deploy instantly and scale automatically 
-                with our global infrastructure.
+                25+ React components built with TypeScript and Tailwind CSS for rapid development 
+                and consistent design systems.
               </p>
             </div>
             
@@ -64,10 +64,10 @@ export const HomePage: React.FC = () => {
               <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-6">
                 <Shield className="text-green-600" size={24} />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Enterprise Security</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">TypeScript First</h3>
               <p className="text-gray-600">
-                Bank-level security with end-to-end encryption, compliance certifications, 
-                and advanced threat protection.
+                Fully typed components with excellent IntelliSense support, prop validation, 
+                and enhanced developer experience.
               </p>
             </div>
             
@@ -75,10 +75,10 @@ export const HomePage: React.FC = () => {
               <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-6">
                 <Users className="text-purple-600" size={24} />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Team Collaboration</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">Design System Ready</h3>
               <p className="text-gray-600">
-                Real-time collaboration tools, role-based permissions, and integrated 
-                communication for seamless teamwork.
+                Consistent design tokens, theming support, and customizable components 
+                that scale with your design system needs.
               </p>
             </div>
           </div>
@@ -124,13 +124,13 @@ export const HomePage: React.FC = () => {
             Ready to get started?
           </h2>
           <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-            Join thousands of developers building the next generation of web applications.
+            Join thousands of developers building beautiful interfaces with Leximius components.
           </p>
           <Link 
-            to="/auth/register" 
+            to="/library" 
             className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors inline-flex items-center"
           >
-            Start Building Today
+            Start Building with Leximius
             <ArrowRight className="ml-2" size={20} />
           </Link>
         </div>

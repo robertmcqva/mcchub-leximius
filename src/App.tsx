@@ -17,6 +17,12 @@ import { AdminPanel } from './pages/admin/AdminPanel'
 import { NotFoundPage } from './pages/NotFoundPage'
 import { ProtectedRoute } from './components/ProtectedRoute'
 import { AdminRoute } from './components/AdminRoute'
+// Leximius Library Pages
+import { LibraryOverviewPage } from './pages/library/LibraryOverviewPage'
+import { ComponentsPage } from './pages/library/ComponentsPage'
+import { ComponentDetailPage } from './pages/library/ComponentDetailPage'
+import { GettingStartedPage } from './pages/library/GettingStartedPage'
+import { PlaygroundPage } from './pages/library/PlaygroundPage'
 
 function App() {
   return (
@@ -31,6 +37,13 @@ function App() {
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/blog/:slug" element={<BlogPage />} />
+          
+          {/* Leximius Library Routes */}
+          <Route path="/library" element={<LibraryOverviewPage />} />
+          <Route path="/library/getting-started" element={<GettingStartedPage />} />
+          <Route path="/library/components" element={<ComponentsPage />} />
+          <Route path="/library/playground" element={<PlaygroundPage />} />
+          <Route path="/library/components/:componentName" element={<ComponentDetailPage componentName="Button" />} />
           
           {/* Auth Routes */}
           <Route path="/auth/login" element={<LoginPage />} />
